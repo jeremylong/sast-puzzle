@@ -1,0 +1,30 @@
+plugins {
+    id 'application'
+}
+apply plugin : "java"
+ext {
+    javaMainClass = "org.sample.app.App"
+}
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compileOnly 'javax.servlet:javax.servlet-api:3.0.1'
+    testImplementation libs.junit.jupiter
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(11)
+    }
+}
+
+application {
+    mainClass = javaMainClass
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+}
