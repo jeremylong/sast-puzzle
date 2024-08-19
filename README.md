@@ -17,7 +17,7 @@ line application is the easiest way to demonstrate the SQL Injection vulnerabili
 a query string that is used to build a SQL Query. The query string is not sanitized, and the SQL Query is built by
 concatenating the `where` clause in the query string into a SQL Statement. 
 
-While it is easy to trace the code in a debugger (see (AppTest.java)[app/test/java/org/sample/app/AppTest.java]), it is also possible
+While it is easy to trace the code in a debugger (see [AppTest.java](https://github.com/jeremylong/sast-puzzle/blob/main/app/src/test/java/org/sample/app/AppTest.java)), it is also possible
 to see that SQL Injection occurs by running the command:
 
 ```bash
