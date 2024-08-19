@@ -6,9 +6,9 @@ the vulnerability.
 
 The project is being published as a puzzle to test your SAST tooling. The project is built with Gradle:
 
-    ```bash
-    ./gradlew build --info
-    ```
+```bash
+./gradlew build --info
+```
 
 ## Demonstrating the Issue
 
